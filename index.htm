@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+
+<!--<html lang="es-es" xmlns="http://www.w3.org/1999/xhtml">-->
+<html>
+<head>
+    <!--<meta charset="utf-8" />-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Home Page</title>
+	<link rel="shortcut icon" href="HomePage_files/img/nuclear-icon.png">
+    <link rel="Stylesheet" href="HomePage_files/files/styles.css" type="text/css" />
+    <script src="HomePage_files/files/jquery-3.1.1.js"></script>
+    <!--<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>-->
+    <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.js"></script>-->
+    <script src="HomePage_files/files/jquery-ui-1.12.1.js"></script>
+	<!--<script type="text/javascript" src="HomePage_files/files/linq.js"></script>-->
+    <script src="HomePage_files/files/data.js" charset="iso-8859-1"></script>
+    <script src="HomePage_files/files/functions.js" charset="iso-8859-1"></script>
+
+</head>
+<body id="theBody">
+    <!--onload="JavaScript:StartLoad();"-->
+    <div>
+        <img border="0" id="imgHome" src="" style="position:absolute;border:solid 1px blue; display:block; width:auto;" usemap="#MapHomePage" /><!-- onload="getWidthAndHeight(this);" --><!--z-index:10; --><!--width:100%-->
+    </div>
+    <map name="MapHomePage" id="mpHomePage"></map>
+    <input type="text" id="txtPrueba" name="txtPrueba" value="" style="position:absolute; top:11px; left:11px; z-index:11; display:none; cursor:default; font-weight:bold; color:red; font-family:Arial; font-size:10px;" size="30" />
+    <input type="text" id="txtMouse" name="txtMouse" value="" style="position:absolute; top:11px; left:11px; z-index:11; display:none; cursor:default; font-weight:bold; color:red; font-family:Arial; font-size:10px;" size="15" disabled="disabled" /><!--size="15"-->
+    <!--<input type="text" id="txtInfoLink" name="txtInfoLink" value="txtInfoLink" style="position:absolute; top:11px; left:11px; z-index:11; display:block; cursor:default; font-weight:bold; color:red; font-family:Arial; font-size:10px;" size="15" disabled="disabled" />--><!--size="15"-->
+    <div id="dvInfo"></div>
+    <img class="thumbImage" id="imgThumbImage" style="display:none;height:120px;width:150px;" src="" />
+    <div id="dvLeft" class="sideDiv" style="display:none"></div>
+    <div id="dvTop" class="sideDiv" style="display:none"><!-- &nbsp; --></div>
+    <div id="dvRight" class="sideDiv" style="display:none"></div>
+    <div id="dvBottom" class="sideDiv" style="display:none"><!-- &nbsp; --></div>
+    <!--<p>If you click on me, I will disappear.</p>
+    <p>Click me away!</p>
+    <p>Click me too!</p>-->
+    <div id="divSearchBoxContainer" class="divBuscador">
+        <div id="divSearchContainer" class="divSearchContainer">
+            <input type="text" id="txtSearch" onkeypress="search_keypress(event);" onkeyup="search_keyup(event);" size="15" />
+            <div style="float:right;" class="divClassX" onclick="help_finder();"></div>
+            <div id="divSearchResult" class="resultSearch"></div>
+        </div>
+        <!--onkeypress=\"JavaScript:TeclasPulsadasBusqueda(event);\" onkeyup=\"JavaScript:BuscandoResultados(event, this,'1');\"-->
+        <!--<div id="divSearch">Drag me</div>-->
+    </div>
+
+    <div id="divParentComboBoxContainer" class="divComboBox" style="border:1px solid white">
+        <div id="divComboBoxContainer" class="divComboBoxContainer">
+            <span class="spTitleComboBox" id="spTitleComboBox"></span>
+            <div style="float:right;" class="divClassX" onclick="combo_data();"></div>
+            <div id="divComboBoxResult" class="resultComboBox">
+                <!--<select style="width:100%;">
+                    <option value="1">Uno</option>
+                    <option value="2">Dos</option>
+                    <option value="3">Tres</option>
+                    <option value="4">Cuatro, un valor un poquito más largo de lo normal</option>
+                    <option value="5">Cinco</option>
+                    <option value="6">Seis</option>
+                    <option value="7">Siete</option>
+                </select>-->
+            </div>
+        </div>
+    </div>
+
+    <!--<div id="divComboBuscador" class="divBuscador" draggable="true">
+        <p>hola</p>
+        </div>-->
+    <!--<div id="divComboBuscador" class="divBuscador">
+                <table style="width:97%;height:40px;margin-left:auto;margin-right:auto;" border="0">
+                    <tbody><tr>
+                        <td id="tdBuscadorTitle">
+                            <script type="text/javascript" language="javascript">
+                                if (browser.isFF)
+                                    document.write("<input type=\"text\" id=\"txtBuscador\" name=\"txtBuscador\" value=\"\" style=\"z-index:11; display:block;\" size=\"25\" onkeypress=\"JavaScript:TeclasPulsadasBusqueda(event);\" onkeyup=\"JavaScript:BuscandoResultados(event, this,'1');\" maxlength=\"50\" autocomplete=\"off\"/>");
+                                else
+                                    document.write("<input type=\"text\" id=\"txtBuscador\" name=\"txtBuscador\" value=\"\" style=\"z-index:11; display:block;\" size=\"25\" onkeydown=\"JavaScript:TeclasPulsadasBusqueda(event);\" onkeyup=\"JavaScript:BuscandoResultados(event, this,'1');\" maxlength=\"50\" autocomplete=\"off\"/>");
+                            </script><input id="txtBuscador" name="txtBuscador" value="" style="z-index:11; display:block;" size="25" onkeypress="JavaScript:TeclasPulsadasBusqueda(event);" onkeyup="JavaScript:BuscandoResultados(event, this,'1');" maxlength="50" autocomplete="off" type="text">
+
+                            <div id="divResultadoBusqueda" class="resulBusqueda" style="width: 177px; display: block; left: 8px; top: 33px; height: 79px;"><div id="divResul_002" class="resulDivsBusqueda" tabindex="0" onmouseover="JavaScript:ResaltLine('002', 'over');SelectFromBusqueda(this,'002');" onmouseout="JavaScript:ResaltLine('002', 'out');HideEffectFromSearch();" onclick="JavaScript:OpenFromSearch('002');" seleccionado="N">YA<b>HO</b>O</div><div id="divResul_062" class="resulDivsBusqueda" tabindex="1" onmouseover="JavaScript:ResaltLine('062', 'over');SelectFromBusqueda(this,'062');" onmouseout="JavaScript:ResaltLine('062', 'out');HideEffectFromSearch();" onclick="JavaScript:OpenFromSearch('062');" seleccionado="N" style="background-color: white;">PRO SIMA<b>HO</b>GAR</div><div id="divResul_065" class="resulDivsBusqueda" tabindex="2" onmouseover="JavaScript:ResaltLine('065', 'over');SelectFromBusqueda(this,'065');" onmouseout="JavaScript:ResaltLine('065', 'out');HideEffectFromSearch();" onclick="JavaScript:OpenFromSearch('065');" seleccionado="N" style="background-color: white;">DES SIMA<b>HO</b>GAR</div><div id="divResul_097" class="resulDivsBusqueda" tabindex="3" onmouseover="JavaScript:ResaltLine('097', 'over');SelectFromBusqueda(this,'097');" onmouseout="JavaScript:ResaltLine('097', 'out');HideEffectFromSearch();" onclick="JavaScript:OpenFromSearch('097');" seleccionado="N" style="background-color: white;">OCU - <b>HO</b>GAR</div></div>
+                        </td>
+                        <td style="text-align:center center; vertical-align:middle;">
+                            <img src="PagInicioCurro_files/img/application-exit-2.png" style="height:18px;width:18px; cursor:pointer; text-align:center center; float:right" onclick="JavaScript:CloseBuscador();">
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>-->
+    <!--<img id="img_080" style="height: 22px; width: 22px; left: 659.54px; top: 173.16px; display: block;" src="PagInicioCurro_files/img/R2D2-icon.png" class="icoClass" onmouseover="javascript:MostrarInformacion(arrUrl[80]);SetIcoBigger(&quot;080&quot;);" onmouseout="javascript:OcultarInformacion();SetIcoNormal(&quot;080&quot;);" onclick="JavaScript:MostrarBuscador();">-->
+
+</body>
+</html>

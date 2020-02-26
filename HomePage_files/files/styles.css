@@ -1,0 +1,240 @@
+
+
+body {
+    overflow:hidden;
+    background-color:#000000;
+}
+
+
+.icoClass{
+	z-index:100;
+	position:absolute;
+	cursor:pointer;
+    /*height:32px;*/
+    /*width:32px;*/
+    /*border: red 1px solid;*/
+}
+
+.mapClass {
+    cursor:pointer;
+    border: red 1px solid;
+}
+
+.sideDiv{
+	background-color:red;
+	z-index:100;
+	font-size:1px;
+	line-height:0px;
+}
+
+
+.divBuscador
+{
+	height:25px;
+    z-index:100;
+    width:200px;
+    display:none;
+    position:relative;
+    background-color:Blue;
+    cursor:move;
+	padding:2px;
+	/*color:White;*/
+	font-weight:bold;
+	/*text-align:center;*/
+	/*border-top-right-radius:10;-moz-border-radius-topright:10;-webkit-border-top-right-radius:10;
+	border-top-left-radius:10;-moz-border-radius-topleft:10;-webkit-border-top-left-radius:10;
+	border-bottom-right-radius:10;-moz-border-radius-bottomright:10;-webkit-border-bottom-right-radius:10;
+	border-bottom-left-radius:10;-moz-border-radius-bottomleft:10;-webkit-border-bottom-left-radius:10;*/
+}
+
+.divSearchContainer {
+    height:25px;
+    width:200px;
+    z-index:100;
+    background-color:blue;
+}
+
+div.divClassX{
+    float:right;
+    /*margin-top:-30px;
+    margin-right:-30px;*/
+    cursor:pointer;
+    color: #fff;
+    border: 1px solid #AEAEAE;
+    border-radius: 30px;
+    background:#B30000 ; /* #605F61;*/
+    font-size: 31px;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 0px;
+    padding: 11px 3px;       
+}
+
+.divClassX:before {
+    content: "\00d7";
+}
+
+/* Prevent the text contents of draggable elements from being selectable. */
+
+/*[draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+}*/
+
+
+
+.resultSearch
+{
+	cursor:pointer;
+	white-space:nowrap;
+	/*width:100%;*/
+    width:200px;
+	display: table;
+    background-color:white;
+    z-index:110;
+}
+
+
+.classPrueba {
+}
+
+.resultComboBox {
+    cursor: pointer;
+    /*white-space: nowrap;*/
+    /*width:100%;*/
+    width: 249px;
+    /*display: table;*/
+    background-color: blue;
+    z-index: 110;
+    padding-top: 3px;
+}
+
+.divComboBox {
+    height: 80px;
+    z-index: 100;
+    width: 250px;
+    display: none;
+    position: relative;
+    background-color: Blue;
+    cursor: move;
+    padding: 2px;
+    /*color:White;*/
+    font-weight: bold;
+    /*text-align:center;*/
+    /*border-top-right-radius:10;-moz-border-radius-topright:10;-webkit-border-top-right-radius:10;
+	border-top-left-radius:10;-moz-border-radius-topleft:10;-webkit-border-top-left-radius:10;
+	border-bottom-right-radius:10;-moz-border-radius-bottomright:10;-webkit-border-bottom-right-radius:10;
+	border-bottom-left-radius:10;-moz-border-radius-bottomleft:10;-webkit-border-bottom-left-radius:10;*/
+}
+
+.divComboBoxContainer {
+    height: 80px;
+    width: 250px;
+    z-index: 100;
+    background-color: blue;
+}
+
+.spTitleComboBox
+{
+    padding-left:5px;
+    color:black;
+}
+/*
+    https://www.w3schools.com/howto/howto_js_snackbar.asp
+    // Div de información de cada icono
+*/
+#dvInfo {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    /*min-width: 100px;*/ /* Set a default minimum width */
+    /*margin-left: -125px;*/ /* Divide value of min-width by 2 */
+    background-color: white; /* Black background color */
+    color: black; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 3px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 10px; /* Center the snackbar */
+    /*bottom: 30px;*/ /* 30px from the bottom */
+    bottom: 8px;
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#dvInfo.show {
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 8px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 8px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 8px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 8px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+/* Fin Animación snackbar */
+
+.selComboHelp {
+    z-index: 100;
+    /*position:absolute;*/
+    /*width:232px;
+	height:110px;*/
+    border-right: blue 3px solid;
+    border-top: blue 3px solid;
+    border-left: blue 3px solid;
+    border-bottom: blue 3px solid;
+    font-size: 10px;
+    font-weight: bold;
+    width: 90%;
+    font-family: Tahoma,,fantasy, cursive, Serif;
+}
