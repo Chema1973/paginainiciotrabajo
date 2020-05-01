@@ -50,7 +50,7 @@ var dataIco = [
         {
             "id": 3,
             "name": "Coordenadas",
-            "description": "Muestra las coordenadas del ratón",
+            "description": "Muestra las coordenadas del rat&oacute;n",
             "type": "img",
             "coordinates": "355,380",
             "onclick": "fcn",
@@ -164,7 +164,7 @@ var dataIco = [
         {
             "id": 9,
             "name": "R.A.E.",
-            "description": "Real Academia Española",
+            "description": "Real Academia Espa&ntilde;ola",
             "type": "img",
             "coordinates": "700,480",
             "onclick": "url",
@@ -240,14 +240,14 @@ var dataIco = [
     ,
         {
             "id": 13,
-            "name": "Combo Url Programación",
-            "description": "Combo con Urls de Programación",
+            "name": "Combo Url Programaci&oacute;n",
+            "description": "Combo con Urls de Programaci&oacute;n",
             "type": "img",
             "coordinates": "176,460",
             "onclick": "fcn",
             "action": "show_combo_data('programacion');",
             "icon": "Apps-Ide-Web-icon.png",
-            "titlealt": "Combo Url Programación",
+            "titlealt": "Combo Url Programaci&oacute;n",
             "css": "",
             "style": "",
             "height": "32",
@@ -371,14 +371,14 @@ var dataIco = [
     ,
         {
             "id": 20,
-            "name": "Periódicos OnLine",
-            "description": "Combo Periódicos OnLine",
+            "name": "Peri&oacute;dicos OnLine",
+            "description": "Combo Peri&oacute;dicos OnLine",
             "type": "img",
             "coordinates": "400, 785",
             "onclick": "fcn",
             "action": "show_combo_data('periodicos');",
             "icon": "Newspapers-2-icon.png",
-            "titlealt": "Periódicos OnLine",
+            "titlealt": "Peri&oacute;dicos OnLine",
             "css": "",
             "style": "",
             "height": "32",
@@ -391,7 +391,7 @@ var dataIco = [
         {
             "id": 21,
             "name": "El Mundo",
-            "description": "Periódico El Mundo",
+            "description": "Peri&oacute;dico El Mundo",
             "type": "img",
             "coordinates": "350, 850",
             "onclick": "url",
@@ -409,14 +409,14 @@ var dataIco = [
     ,
         {
             "id": 22,
-            "name": "Guía TV",
-            "description": "Guía TV",
+            "name": "Gu&iacute;a TV",
+            "description": "Gu&iacute;a TV",
             "type": "img",
             "coordinates": "132, 820",
             "onclick": "url",
             "action": "http://www.elmundo.es/elmundo/television/guiatv/",
             "icon": "GuiaTV.png",
-            "titlealt": "Guía TV",
+            "titlealt": "Gu&iacute;a TV",
             "css": "",
             "style": "",
             "height": "32",
@@ -448,13 +448,13 @@ var dataIco = [
         {
             "id": 24,
             "name": "Test de Velocidad",
-            "description": "Guía TV",
+            "description": "Test de Velocidad",
             "type": "img",
             "coordinates": "145, 635",
             "onclick": "url",
             "action": "http://www.testdevelocidad.es/",
             "icon": "Downloads-1-icon.png",
-            "titlealt": "Guía TV",
+            "titlealt": "Test de Velocidad",
             "css": "",
             "style": "",
             "height": "32",
@@ -656,14 +656,14 @@ var dataIco = [
     ,
         {
             "id": 35,
-            "name": "Loterías del Estado",
-            "description": "Loterías del Estado",
+            "name": "Loter&iacute;as del Estado",
+            "description": "Loter&iacute;as del Estado",
             "type": "img",
             "coordinates": "100, 940",
             "onclick": "url",
             "action": "https://www.loteriasyapuestas.es/es#",
             "icon": "lottery-folder-icon.png",
-            "titlealt": "Loterías del Estado",
+            "titlealt": "Loter&iacute;as del Estado",
             "css": "",
             "style": "",
             "height": "32",
@@ -1016,14 +1016,14 @@ var dataIco = [
 		},
 		{
 			"id": 54,
-            "name": "Prueba Página Inicio",
-            "description": "Prueba Página Inicio",
+            "name": "Prueba P&aacute;gina Inicio",
+            "description": "Prueba P&aacute;gina Inicio",
             "type": "img",
             "coordinates": "441, 153",
             "onclick": "url",
             "action": "https://epic-wiles-805f26.netlify.com/",
             "icon": "Home-Server-icon.png",
-            "titlealt": "Prueba Página Inicio",
+            "titlealt": "Prueba P&aacute;gina Inicio",
             "css": "",
             "style": "",
             "height": "32",
@@ -1034,14 +1034,14 @@ var dataIco = [
 		},
 		{
 			"id": 55,
-            "name": "Documentación eReges",
-            "description": "Documentación eReges",
+            "name": "Documentaci&oacute;n eReges",
+            "description": "Documentaci&oacute;n eReges",
             "type": "img",
             "coordinates": "1836, 136",
             "onclick": "url",
             "action": "https://inecospain.sharepoint.com/sites/DesarrollodeeREGES/Documentos%20compartidos/Forms/AllItems.aspx?e=5%3A09cd9bbaa56844f2a87d272cbd8644d6&at=9&CT=1579609155027&OR=OWA%2DNT&CID=da7ee843%2D9f37%2D84e8%2D7b53%2D0ff10a12a2be&RootFolder=%2Fsites%2FDesarrollodeeREGES%2FDocumentos%20compartidos%2FDocumentaci%C3%B3n%20Adicional&FolderCTID=0x012000D909797EF8180548AB7D0C896A35AB1F",
             "icon": "Folder-My-Shared-Pictures-icon.png",
-            "titlealt": "Documentación eReges",
+            "titlealt": "Documentaci&oacute;n eReges",
             "css": "",
             "style": "",
             "height": "32",
@@ -1069,8 +1069,8 @@ dataIco = dataIco.filter(function (data) {
 var dataCombos = [
     {
         "comboid": "programacion",
-        "comboname": "Url Programación",
-        "combodescripcion": "Url de sitios de programación",
+        "comboname": "Url Programaci&oacute;n",
+        "combodescripcion": "Url de sitios de programaci&oacute;n",
         "comboactive": "Y",
         "combosize" : 3,
         "combocoleccion": [
@@ -1202,20 +1202,20 @@ var dataCombos = [
         "combosize": 3,
         "combocoleccion": [
             {
-                "text": "Monitorización Internet",
+                "text": "Monitorizaci&oacute;n Internet",
                 "value": "http://www.akamai.com/html/technology/dataviz1.html",
                 "orden": 1,
                 "active": "Y"
             },
             {
-                "text": "MD5 Encriptación",
+                "text": "MD5 Encriptaci&oacute;n",
                 "value": "http://www.cuwhois.com/herramienta-seo-md5.php",
                 "orden": 2,
                 "active": "Y"
             }
             ,
             {
-                "text": "MD5 Desencriptación",
+                "text": "MD5 Desencriptaci&oacute;n",
                 "value": "http://md5.rednoize.com/",
                 "orden": 3,
                 "active": "Y"
@@ -1257,7 +1257,7 @@ var dataCombos = [
             }
             ,
             {
-                "text": "Tarjetas de Crédito - Pruebas",
+                "text": "Tarjetas de Cr&eacute;dito - Pruebas",
                 "value": "http://modulosdepago.es/Tarjetas-de-cr%C3%A9dito-pruebas",
                 "orden": 9,
                 "active": "Y"
@@ -1302,8 +1302,8 @@ var dataCombos = [
     ,
     { 
         "comboid": "periodicos",
-        "comboname": "Periódicos online",
-        "combodescripcion": "Combo de periódicos online",
+        "comboname": "Peri&oacute;dicos online",
+        "combodescripcion": "Combo de peri&oacute;dicos online",
         "comboactive": "Y",
         "combosize": 3,
         "combocoleccion": [
@@ -1314,7 +1314,7 @@ var dataCombos = [
                 "active": "Y"
             },
             {
-                "text": "El País",
+                "text": "El Pa&iacute;s",
                 "value": "http://www.elpais.com/",
                 "orden": 2,
                 "active": "Y"
@@ -1346,7 +1346,7 @@ var dataCombos = [
     {
         "comboid": "radiosidiomas",
         "comboname": "Radios en Idiomas",
-        "combodescripcion": "Combo de radios online en inglés",
+        "combodescripcion": "Combo de radios online en ingl&eacute;s",
         "comboactive": "Y",
         "combosize": 3,
         "combocoleccion": [
@@ -1386,7 +1386,7 @@ var dataCombos = [
         "combosize": 3,
         "combocoleccion": [
             {
-                "text": "Imágenes Gratuitas",
+                "text": "Im&aacute;genes Gratuitas",
                 "value": "https://unsplash.com/",
                 "orden": 1,
                 "active": "Y"
@@ -1416,19 +1416,19 @@ var dataCombos = [
                 "active": "Y"
             },
 			{
-                "text": "Crear aplicación React",
+                "text": "Crear aplicaci&oacute;n React",
                 "value": "https://github.com/facebook/create-react-app",
                 "orden": 6,
                 "active": "Y"
             },
 			{
-                "text": "Gráficos Interactivos",
+                "text": "Gr&aacute;ficos Interactivos",
                 "value": "https://www.highcharts.com/",
                 "orden": 7,
                 "active": "Y"
             },
 			{
-                "text": "Librería Utilidades Fechas",
+                "text": "Librer&iacute;a Utilidades Fechas",
                 "value": "https://momentjs.com/",
                 "orden": 8,
                 "active": "Y"
