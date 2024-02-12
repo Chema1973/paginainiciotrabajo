@@ -93,7 +93,8 @@ div.divClassX{
 	cursor:pointer;
 	white-space:nowrap;
 	/*width:100%;*/
-    width:200px;
+    /*width:200px;*/
+    width:100%;
 	display: table;
     background-color:white;
     z-index:110;

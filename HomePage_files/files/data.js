@@ -197,7 +197,8 @@ var dataIco = [
             "thumbnails": "wikipedia.png",
             "extra": "",
             "active": "Y"
-          }
+    }
+
     ,
         {
             "id": 11,
@@ -694,16 +695,14 @@ var dataIco = [
 	,
         {
             "id": 37,
-            "name": "Mail Ineco",
-            "description": "Mail Ineco",
+            "name": "Mail Grupo ICA",
+            "description": "Mail Grupo ICA",
             "type": "img",
-            "coordinates": "588, 816",
+            "coordinates": "1545, 315",
             "onclick": "url",
-            // "action": "https://outlook.office365.com/owa/?realm=ineco.es&path=/mail/inbox",
-			// "action": "https://mail.ineco.com/owa/#path=/mail",
-			"action": "https://outlook.office365.com/mail/inbox",
+            "action": "https://outlook.office365.com/mail/",
             "icon": "Mail-icon.png",
-            "titlealt": "Mail Ineco",
+            "titlealt": "Mail Grupo ICA",
             "css": "",
             "style": "",
             "height": "32",
@@ -715,14 +714,14 @@ var dataIco = [
 	,
         {
             "id": 38,
-            "name": "Ereges",
-            "description": "Ereges",
+            "name": "Registro Horas",
+            "description": "Registro de horas del portal del empleado",
             "type": "img",
-            "coordinates": "1545, 315",
+            "coordinates": "1840, 135",
             "onclick": "url",
-            "action": "https://ereges-pre.ineco.com/",
-            "icon": "justice-balance-icon.png",
-            "titlealt": "Ereges",
+            "action": "https://portalempleado.grupoica.com/registro-horas",
+            "icon": "Actions-player-time-icon.png",
+            "titlealt": "Registro Horas",
             "css": "",
             "style": "",
             "height": "32",
@@ -734,14 +733,14 @@ var dataIco = [
 		,
         {
             "id": 39,
-            "name": "Mail Procesia",
-            "description": "Mail Procesia",
+            "name": "TimeAndExpense",
+            "description": "TimeAndExpense",
             "type": "img",
-            "coordinates": "648, 818",
+            "coordinates": "1809, 260",
             "onclick": "url",
-            "action": "http://webmail.procesia.com",
-            "icon": "mail-procesia-icon.png",
-            "titlealt": "Mail Procesia",
+            "action": "https://timereport.nubecento.com/imputaciones",
+            "icon": "Time-capsule-icon.png",
+            "titlealt": "TimeAndExpense",
             "css": "",
             "style": "",
             "height": "32",
@@ -753,14 +752,14 @@ var dataIco = [
 		,
         {
             "id": 40,
-            "name": "Dropbox",
-            "description": "Dropbox",
+            "name": "Citrix",
+            "description": "Citrix Aon",
             "type": "img",
             "coordinates": "1543, 226",
             "onclick": "url",
-            "action": "https://www.dropbox.com/l/scl/AAC0IhTBbWYoTJUiBxazD8bcMQAEYCj1Wfw",
-            "icon": "dropbox-icon.png",
-            "titlealt": "Dropbox",
+            "action": "https://citrix.aon.es",
+            "icon": "citrix-receiver-icon.png",
+            "titlealt": "Citrix",
             "css": "",
             "style": "",
             "height": "32",
@@ -772,14 +771,14 @@ var dataIco = [
 		,
         {
             "id": 41,
-            "name": "Aira",
-            "description": "Aira",
+            "name": "Git Elimper",
+            "description": "Git Elimper",
             "type": "img",
-            "coordinates": "1617, 274",
+            "coordinates": "1750, 405",
             "onclick": "url",
-            "action": "https://personalae-pre.ineco.com/",
-            "icon": "ai-icon.png",
-            "titlealt": "Aira",
+            "action": "https://gogs.intranet.aon.es/",
+            "icon": "folder-red-git-icon.png",
+            "titlealt": "Git Elimper",
             "css": "",
             "style": "",
             "height": "32",
@@ -791,14 +790,14 @@ var dataIco = [
 		,
         {
             "id": 42,
-            "name": "eReges",
-            "description": "eReges",
+            "name": "Limper Prueba",
+            "description": "Limper Prueba",
             "type": "img",
-            "coordinates": "1617, 185",
+            "coordinates": "1880, 470",
             "onclick": "url",
-            "action": "https://ereges-pre.ineco.com/nuevoereges",
-            "icon": "Gavel-Law-icon.png",
-            "titlealt": "eReges",
+            "action": "https://www.aon.es/pruservices/aon",
+            "icon": "insurance-icon.png",
+            "titlealt": "Limper Prueba",
             "css": "",
             "style": "",
             "height": "32",
@@ -810,14 +809,14 @@ var dataIco = [
 		,
         {
             "id": 43,
-            "name": "eReges-API",
-            "description": "eReges-API",
+            "name": "Cursos Pendientes AON",
+            "description": "Cursos Pendientes AON",
             "type": "img",
-            "coordinates": "1698, 155",
+            "coordinates": "1560, 605",
             "onclick": "url",
-            "action": "https://ereges-pre.ineco.com/eRegesAPI/index.html",
-            "icon": "Apps-partitionmanager-icon.png",
-            "titlealt": "eReges-API",
+            "action": "https://wd5.myworkday.com/aon/learning/discover/viewmore/6964690f7fd810001c749ba92ee68ceb",
+            "icon": "Tutorial-icon.png",
+            "titlealt": "Cursos Pendientes AON",
             "css": "",
             "style": "",
             "height": "32",
@@ -829,14 +828,14 @@ var dataIco = [
 		,
         {
             "id": 44,
-            "name": "Asana",
-            "description": "Asana",
+            "name": "Services Desk AON",
+            "description": "Services Desk AON",
             "type": "img",
-            "coordinates": "1542, 70",
+            "coordinates": "1885, 335",
             "onclick": "url",
-            "action": "https://app.asana.com/0/home/900479283983793",
-            "icon": "asana.png",
-            "titlealt": "Asana",
+            "action": "https://emadwnpmgt00004.aonnet.aon.net:8080/",
+            "icon": "Apps-preferences-system-time-icon.png",
+            "titlealt": "Services Desk AON",
             "css": "",
             "style": "",
             "height": "32",
@@ -848,14 +847,14 @@ var dataIco = [
 		,
         {
             "id": 45,
-            "name": "Project Center",
-            "description": "Project Center - Ineco",
+            "name": "Beneficios Grupo ICA",
+            "description": "Beneficios Grupo ICA",
             "type": "img",
-            "coordinates": "1746, 255",
+            "coordinates": "1625, 60",
             "onclick": "url",
-            "action": "https://projectcenter.ineco.es//projectcenter/Account.aspx/RedirectLogOn?returnurl=/projectcenter/Home.aspx?d=true",
-            "icon": "Project-icon.png",
-            "titlealt": "Project Center",
+            "action": "https://grupoica.benefitsatwork.es/",
+            "icon": "santa-money-icon.png",
+            "titlealt": "Beneficios Grupo ICA",
             "css": "",
             "style": "",
             "height": "32",
@@ -867,14 +866,14 @@ var dataIco = [
 		,
         {
             "id": 46,
-            "name": "Jira",
-            "description": "Jira - Ineco",
+            "name": "Udemy",
+            "description": "Cursos Online",
             "type": "img",
-            "coordinates": "1604, 100",
+            "coordinates": "413, 484",
             "onclick": "url",
-            "action": "https://devti.ineco.es/jira",
-            "icon": "Giraffe-icon.png",
-            "titlealt": "Jira",
+            "action": "https://www.udemy.com/",
+            "icon": "Courses-icon2.png",
+            "titlealt": "Udemy",
             "css": "",
             "style": "",
             "height": "32",
@@ -886,15 +885,14 @@ var dataIco = [
 		,
         {
             "id": 47,
-            "name": "Confluence",
-            "description": "Confluence - Ineco",
+            "name": "LastQuake",
+            "description": "Últimos Terremotos",
             "type": "img",
-            "coordinates": "1543, 154",
+            "coordinates": "620, 230",
             "onclick": "url",
-            //"action": "https://devti.ineco.es/confluence",
-			"action": "https://devti.ineco.es/confluence/login.action?os_destination=%2F",
-            "icon": "Confluence.png",
-            "titlealt": "Confluence",
+            "action": "https://www.emsc-csem.org/#2",
+            "icon": "lastQuake.png",
+            "titlealt": "LastQuake",
             "css": "",
             "style": "",
             "height": "32",
@@ -925,14 +923,14 @@ var dataIco = [
 		,
         {
             "id": 49,
-            "name": "Trello Ereges",
-            "description": "Trello Ereges",
+            "name": "Volcanes",
+            "description": "Volcanes Activos",
             "type": "img",
-            "coordinates": "1750, 409",
+            "coordinates": "680, 270",
             "onclick": "url",
-			"action": "https://trello.com/b/vk0Opp99/ereges",
-            "icon": "web-trello-icon.png",
-            "titlealt": "Trello Ereges",
+            "action": "https://volcano.si.edu/gvp_currenteruptions.cfm",
+            "icon": "volcano-icon.png",
+            "titlealt": "Volcanes Activos",
             "css": "",
             "style": "",
             "height": "32",
@@ -958,7 +956,7 @@ var dataIco = [
             "width": "32",
             "thumbnails": "",
             "extra": "",
-            "active": "Y"
+            "active": "N"
         },
 		{
             "id": 51,
@@ -1012,7 +1010,7 @@ var dataIco = [
             "width": "32",
             "thumbnails": "",
             "extra": "",
-            "active": "Y"
+            "active": "N"
 		},
 		{
 			"id": 54,
@@ -1048,7 +1046,7 @@ var dataIco = [
             "width": "32",
             "thumbnails": "",
             "extra": "",
-            "active": "Y"
+            "active": "N"
 		}
 ];
 
@@ -1190,6 +1188,13 @@ var dataCombos = [
                 "orden": 17,
                 "active": "Y"
             }
+            ,
+            {
+                "text": "el Guille",
+                "value": "https://www.elguille.info/",
+                "orden": 18,
+                "active": "Y"
+            }
 			//http://www.tutorialsteacher.com/webapi/create-web-api-project
         ]
     }
@@ -1205,27 +1210,27 @@ var dataCombos = [
                 "text": "Monitorizaci&oacute;n Internet",
                 "value": "http://www.akamai.com/html/technology/dataviz1.html",
                 "orden": 1,
-                "active": "Y"
+                "active": "N"
             },
             {
                 "text": "MD5 Encriptaci&oacute;n",
                 "value": "http://www.cuwhois.com/herramienta-seo-md5.php",
                 "orden": 2,
-                "active": "Y"
+                "active": "N"
             }
             ,
             {
                 "text": "MD5 Desencriptaci&oacute;n",
                 "value": "http://md5.rednoize.com/",
                 "orden": 3,
-                "active": "Y"
+                "active": "N"
             }
             ,
             {
                 "text": "Calculadora NIF",
                 "value": "http://www.calcularletradni.com/",
                 "orden": 4,
-                "active": "Y"
+                "active": "N"
             }
             ,
             {
@@ -1246,7 +1251,7 @@ var dataCombos = [
                 "text": "Generador NIF-NIE-CIF",
                 "value": "http://niednicifgenerador.appspot.com/",
                 "orden": 7,
-                "active": "Y"
+                "active": "N"
             }
             ,
             {
@@ -1296,6 +1301,13 @@ var dataCombos = [
                 "value": "https://app.quicktype.io/",
                 "orden": 14,
                 "active": "Y"
+            },
+            {
+                "text": "Format Json String",
+                "value": "https://www.jsonformatter.io/",
+                "orden": 15,
+                "active": "Y"
+                
             }
         ]
     }
@@ -1494,64 +1506,3 @@ dataCombos = dataCombos.filter(function (data) {
     return data.comboactive == "Y";
 });
 
-
-// http://prcs-lpt-016/ReportServer_SSRS/
-// http://prcs-lpt-016:81/ReportServer_SSRS/Pages/ReportViewer.aspx?%2F
-// http://prcs-lpt-016:81/Reports/browse/
-// https://regex101.com/r/gG3cX2/1
-
-// Tu usuario en Project Center es jose.pairet@e.ineco.com y tu contraseña I119QHE7
-// https://projectcenter.ineco.es//projectcenter/Account.aspx/RedirectLogOn?returnurl=/projectcenter/Home.aspx?d=true
-
-
-//https://app.asana.com/0/home/900479283983793
-// jose.pairet@e.ineco.com
-// 7Enanitos
-
-// https://devti.ineco.es/jira
-// jose.pairet
-// Ineco20190
-
-
-// https://devti.ineco.es/confluence
-// Confluence.png
-// jose.pairet
-// Ineco20190
-
-
-// https://inet.ineco.es/prod/prod_menuintranet20/index.aspx
-
-
-// https://www.idealista.com/inmueble/83966954/
-// Casa Jardín
-
-
-// http://172.16.19.232/eReges.AngularJs
-// http://172.16.19.232/eReges.ApiJs
-
-
-// https://savoirs.rfi.fr/es/apprendre-enseigner
-// https://apprendre.tv5monde.com/es
-
-
-
-// https://trello.com/b/vk0Opp99/ereges
-// web-trello-icon.png
-// 1750 - 409
-
-
-// http://172.16.19.232/eReges.Angular7/login
-// Judge-icon.png
-
-
-// tool-kit-icon.png
-// Courses-icon.png
-
-// Categories-applications-internet-icon.png
-// https://intranet.procesia.com/#/login?redirect=%2F
-// 647 - 756
-
-
-// Folder-My-Shared-Pictures-icon.png
-
-// https://unruffled-tereshkova-0451f1.netlify.com/

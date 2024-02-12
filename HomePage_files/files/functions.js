@@ -388,11 +388,12 @@ function show_map_border(sId) {
  * al pasar el ratón sobre el resultado
  * @param {any} sId
  */
-function result_search_over(sId)
+function result_search_over(sIdDiv, sId)
 {
+    // console.log('result_search_over::' + sIdDiv + "-" + sId);
     // Resaltar la línea 
-    helpfinder_line_over(sId);
-
+    helpfinder_line_over(sIdDiv);
+    // console.log('result_search_over::' + sId);
     var oIco = get_item_array(sId)[0];
 
     if (oIco.type == "img") {
@@ -413,10 +414,10 @@ function result_search_over(sId)
  * al salir el ratón del resultado
  * @param {any} sId
  */
-function result_search_out(sId)
+function result_search_out(sIdDiv, sId)
 {
     // Quitar el 'resalto' a la líneacomb
-    helpfinder_line_out(sId);
+    helpfinder_line_out(sIdDiv);
 
     var oIco = get_item_array(sId)[0];
 
@@ -461,6 +462,22 @@ function helpfinder_line_out(sId) {
     }
 }
 
+function dblClick_item_search(sId) {
+
+    // ÑAPAQUI
+
+    console.log("dblClick_item_search::1::" + sId);
+
+    // var oIco = get_item_array(sId)[0];
+
+    // console.log(oIco);
+
+    // $("a").trigger("click");
+    // console.log($("#img_" + sId));
+    $("#img_" + sId).trigger("click");
+
+}
+
 /**
  * Muestra/Oculta el buscador de ayuda
  */
@@ -495,33 +512,115 @@ function search_keyup(evt) {
 
         $('#divSearchResult').empty();
 
-        var arrText = sText.split(' ');
-
-        var sNameIco = "";
         var sIdIco = "";
         for (var a = 0; a < dataIco.length; a++) {
             sIcoName = dataIco[a].name.toUpperCase();
             sIdIco = dataIco[a].id;
 
-            for (var b = 0; b < arrText.length; b++) {
-                if (arrText[b] != '') {
-                    if (sIcoName.indexOf(arrText[b]) != -1) {
-                        // Is in the result
+            if (sIcoName.indexOf(sText) != -1) {
+                // Is in the result
 
-                        if ($('#divResult_' + sIdIco).length == 0) {
-                            $('#divSearchResult').append('<div id="divResult_' + sIdIco + '" class="resultSearch">' + dataIco[a].name + '</div>');
+                // if ($('#divResult_' + sIdIco).length == 0) {
+                    $('#divSearchResult').append('<div id="divResult_' + sIdIco + '" class="resultSearch">' + dataIco[a].name + '</div>');
 
-                            $('#divResult_' + sIdIco).attr('onmouseover', "result_search_over('" + sIdIco + "');"); // bigger
-                            $('#divResult_' + sIdIco).attr('onmouseout', "result_search_out('" + sIdIco + "');"); // regular
+                $('#divResult_' + sIdIco).attr('onmouseover', "result_search_over('" + sIdIco + "', " + sIdIco + ");"); // bigger
+                $('#divResult_' + sIdIco).attr('onmouseout', "result_search_out('" + sIdIco + "'," + sIdIco + ");"); // regular
+                // $('#divResult_' + sIdIco).attr('dblclick', "dblClick_item_search(" + sIdIco + ");"); // regular
+                $('#divResult_' + sIdIco).on('dblclick', { icoId: sIdIco }, function (event) {
+                    // console.log("Icos::1::" + sIdIco);
+                    // var data = event.data;
+                    dblClick_item_search(event.data.icoId);
+                });
+                // dblclick
+                // }
+                // console.log("Icos::2::" + sIdIco);
+            }
+        }
+
+        // "action": "show_combo_data('programacion');",
+
+        //console.log("------------------------------------------------------------------------");
+        for (var b = 0; b < dataCombos.length; b++) {
+            if (dataCombos[b].comboid != "help") {
+                for (var c = 0; c < dataCombos[b].combocoleccion.length; c++) {
+                    if (dataCombos[b].combocoleccion[c].text.toUpperCase().indexOf(sText) != -1) {
+                        var sIdComboItem = dataCombos[b].comboid + "_" + dataCombos[b].combocoleccion[c].orden;
+                        sIdIco = "";
+                        for (var d = 0; d < dataIco.length; d++) {
+                            if (dataIco[d].action.indexOf(dataCombos[b].comboid) != -1) {
+                                if (dataIco[d].active == "Y")
+                                    sIdIco = dataIco[d].id;
+
+                                break;
+                            }
                         }
-                    }
+                        // console.log(sIdComboItem + " - " + sIdIco);
+                        // if ($('#divResult_' + sIdComboItem).length == 0) {
 
+                        if (sIdIco != "") {
+
+                            $('#divSearchResult').append('<div id="divResult_' + sIdComboItem + '" class="resultSearch">' + dataCombos[b].comboname + ' (' + dataCombos[b].combocoleccion[c].text + ')</div>');
+
+                            $('#divResult_' + sIdComboItem).attr('onmouseover', "result_search_over('" + sIdComboItem + "'," + sIdIco + ");"); // bigger
+                            $('#divResult_' + sIdComboItem).attr('onmouseout', "result_search_out('" + sIdComboItem + "'," + sIdIco + ");"); // regular
+                            // $('#divResult_' + sIdComboItem).attr('dblclick', "dblClick_item_search(" + sIdIco + ");"); // regular
+                            $('#divResult_' + sIdComboItem).on('dblclick', { icoId: sIdIco }, function (event) {
+                                // console.log("Combos::1::" + sIdIco + " - " + sIdComboItem);
+                                // var data = event.data;
+                                dblClick_item_search(event.data.icoId);
+                            });
+                        }
+                        // console.log("Combos::2::" + sIdIco + " - " + sIdComboItem);
+                        /*
+                        $('body').on('dblclick','#myol li', function() {
+             alert($(this).text()); 
+          });  
+                        */
+                        // }
+
+                    }
                 }
             }
         }
     }
-
 }
+//function search_keyup(evt) {
+
+//    var sText = $('#txtSearch').val().toUpperCase();
+
+//    $('#divSearchResult').empty();
+
+//    if (sText.length > 1) {
+
+//        $('#divSearchResult').empty();
+
+//        var arrText = sText.split(' ');
+
+//        var sNameIco = "";
+//        var sIdIco = "";
+//        for (var a = 0; a < dataIco.length; a++) {
+//            sIcoName = dataIco[a].name.toUpperCase();
+//            sIdIco = dataIco[a].id;
+
+//            for (var b = 0; b < arrText.length; b++) {
+//                if (arrText[b] != '') {
+//                    if (sIcoName.indexOf(arrText[b]) != -1) {
+//                        // Is in the result
+
+//                        if ($('#divResult_' + sIdIco).length == 0) {
+//                            $('#divSearchResult').append('<div id="divResult_' + sIdIco + '" class="resultSearch">' + dataIco[a].name + '</div>');
+
+//                            $('#divResult_' + sIdIco).attr('onmouseover', "result_search_over('" + sIdIco + "');"); // bigger
+//                            $('#divResult_' + sIdIco).attr('onmouseout', "result_search_out('" + sIdIco + "');"); // regular
+//                        }
+//                    }
+
+//                }
+//            }
+//        }
+//    }
+
+//}
 
 /*  FIN:Funciones de Objetos - Búsqueda */
 
@@ -609,7 +708,7 @@ function show_combo_data(sId) {
         }
         else {
             // Es otro ico
-            $("#spTitleComboBox").text(dataCombos.find(x => x.comboid == sId).comboname);
+            $("#spTitleComboBox").html(dataCombos.find(x => x.comboid == sId).comboname);
             // --> Por LINQ ponemos el texto del combo con el nombre del combo
 
             $("#divComboBoxResult").children("select").css("display", "none");
